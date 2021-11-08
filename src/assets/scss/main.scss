@@ -203,9 +203,24 @@ select {
   }
 }
 
+.show-more {
+  width: 200px;
+  margin: 20px auto 50px auto;
+  padding: 10px;
+  background: $accent-color;
+  display: table;
+  float: none;
+  transition: 400ms;
+  border: 1px solid $accent-color;
+
+  &:hover {
+    background: $bg-color;
+    color: $accent-color;
+  }
+}
+
 .container {
   width: 100%;
-  margin-bottom: 100px;
   min-height: calc(100vh - 120px - (19px + 30px));
   a {
     margin: 10px;
@@ -213,6 +228,7 @@ select {
 
   &__card {
     width: 100%;
+    min-height: 220px;
     border: 1px solid darken($bg-color, 10%);
     border-radius: 5px;
     transition: 0.3s;
